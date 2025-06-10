@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판을 작성해보자</title>
+</head>
+<body>
+  <h1>글 작성</h1>
+  <form th:action="@{/boards}" th:object="${board}" method="post">
+    <p>제목: <input type="text" th:field="*{title}"/></p>  <!--th:field = id와 name값을 동시에 넣을 때-->
+    <p>내용:<textarea th:field="*{content}"></textarea></p>
+    <p>작성자: <input type="text" th:field="*{writer}"/></p>
+    <button type="submit">등록</button>
+  </form>
+</body>
+</html>

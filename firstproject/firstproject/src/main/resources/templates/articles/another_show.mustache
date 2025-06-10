@@ -1,0 +1,26 @@
+
+{{>layouts/header}}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Content</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#article}}
+        <tr>
+<!--        <th>{,{article.id}}</th>
+            <th>{,{article.title}}</th>
+            <th>{,{article.content}}</th>  -->
+
+            <th>{{id}}</th>
+            <th>{{title}}</th>
+            <th>{{content}}</th>
+        </tr>
+    </tbody>
+</table>
+
+{{>layouts/footer}}

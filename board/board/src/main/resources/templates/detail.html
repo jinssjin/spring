@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> <!-- 타임리프 문법을 사용하게 해주는 선언부 -->
+<head>
+    <meta charset="UTF-8">
+    <title>Ditail</title>
+</head>
+<body>
+    <h1>글 상세</h1>
+    <h2 th:text="${board.title}"></h2>
+    <p>작성자 : <span th:text="${board.writer}"></span></p>
+    <p th:text="${board.content}"></p>
+    <a href="/board">목록으로</a>
+</body>
+</html>

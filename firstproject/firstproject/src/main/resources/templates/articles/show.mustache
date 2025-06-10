@@ -1,0 +1,33 @@
+
+{{>layouts/header}}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Content</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#article}}
+        <tr>
+            <th>{{id}}</th>
+            <th>{{title}}</th>
+            <th>{{content}}</th>
+        </tr>
+    {{/article}} <!-- article에 포함되있어서  article.id를  그냥 id로 쓸 수 있음 -->
+    </tbody>
+</table>
+
+<!-- 수정 링크 추가 -->
+<a href="/articles/{{article.id}}/edit" class="btn btn-primary">Edit</a>
+<!-- 삭제 링크 추가 -->
+<a href="/articles/{{article.id}}/delete" class="btn btn-danger">Delete</a>
+
+<a href="/articles">Go To Article List</a>
+
+<!-- 댓글 뷰 페이지 삽입 -->
+{{>comments/_comments}}
+
+{{>layouts/footer}}

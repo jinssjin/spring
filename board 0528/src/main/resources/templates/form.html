@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>글쓰기</h1>
+    <form id="boardForm">
+        <div><input type="text" id="title" placeholder="제목"></div>
+        <div><textarea id="content" placeholder="내용"></textarea></div>
+        <div><input type="text" id="writer" placeholder="작성자"></div>
+        <button type="submit">저장</button>
+    </form>
+
+<!--  스크립트 영역  -->
+    <script>
+        document.getElementById('boardForm').addEventListener('submit',function(e){
+            e.preventDefault();
+            const board = {
+                title : document.getElementById('title').value,
+                content : document.getElementById('content').value,
+                writer : document.getElementById('writer').value
+            };
+
+            // const board 자바 스크립트 객체 리터럴 (Object Literal)
+
+        console.log(board);
+
+/*   json을 전송     */
+        fetch('/api/boards',{
+            method:'POST', /* method는 되도록 대문자 */
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify(board)
+        }).then(()=>{
+            alert('저장되었습니다.');
+            location.href = '/list';
+        })
+
+    });
+    </script>
+</body>
+</html>
