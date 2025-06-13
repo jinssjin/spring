@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1fdf2914-5c90-4ddb-8cb4-d7ca7224dbc0" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/config/LoggingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/domain/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/domain/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/exception/BookIdException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/exception/CategoryException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/exception/CommonException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/interceptor/AuditingInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/interceptor/MonitoringInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/repository/CartRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/repository/CartRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/service/CartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/validator/BookId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/validator/BookIdValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/validator/BookValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/validator/UnitsInStockValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/logging/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/messages/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/messages/messages_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/messages/messages_ko.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/static/images/ISBN1234.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/static/images/ISBN1235.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/static/images/ISBN1236.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/static/js/controllers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/templates/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/templates/errorBook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/templates/errorCommon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMarcket/BookMarcket/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/domain/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/repository/BookRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/java/com/springboot/repository/BookRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/templates/addBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/templates/addBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/templates/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/templates/book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/templates/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookMarcket/BookMarcket/src/main/resources/templates/books.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/exam/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/exam/exam/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/exam/src/main/java/com/springboot/controller/Ex01Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/exam/src/main/java/com/springboot/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam/exam/src/main/java/com/springboot/domain/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/exam/src/main/resources/templates/viewPage01.html" beforeDir="false" afterPath="$PROJECT_DIR$/exam/exam/src/main/resources/templates/viewPage01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/exam/src/main/resources/templates/viewPage02.html" beforeDir="false" afterPath="$PROJECT_DIR$/exam/exam/src/main/resources/templates/viewPage02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/exam/src/main/resources/templates/viewPage03.html" beforeDir="false" afterPath="$PROJECT_DIR$/exam/exam/src/main/resources/templates/viewPage03.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트 완전정복_강의교안/chap12 로그 기록.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트 완전정복_강의교안/chap12 로그 기록.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트 완전정복_강의교안/chap13 RESTful 웹서비스.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트 완전정복_강의교안/chap13 RESTful 웹서비스.pptx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2yOwHswpjKFwX7gf9WxFFLWanNx" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/spring"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="1fdf2914-5c90-4ddb-8cb4-d7ca7224dbc0" name="변경" comment="" />
+      <created>1749718842592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749718842592</updated>
+    </task>
+    <servers />
+  </component>
+</project>
