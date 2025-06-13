@@ -3,7 +3,9 @@ package com.daeguFC.fanPage.dto;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Data;
 
+@Data
 public class MemberDTO {
 
     @Id

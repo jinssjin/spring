@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nanum Pen Script', cursive;
+            background: linear-gradient(to bottom right, rgb(194,222,244), rgb(181,248,255));
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: rgb(139,189,228);
+            padding: 2.5em 3em;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            width: 320px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 1em;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 0 black,
+            -1px -1px 0 black,
+            -1px 1px 0 black,
+            1px -1px 0 black;
+        }
+
+        .field {
+            margin-bottom: 1.2em;
+        }
+
+        .field input {
+            width: 90%;
+            padding: 0.75em;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.2em;
+            font-family: 'Nanum Gothic Coding', monospace;
+        }
+
+        .login-btn {
+            width: 100%;
+            margin-top: 1em;
+            background-color: rgb(181,248,255);
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 2em;
+            cursor: pointer;
+            font-family: 'Nanum Pen Script', cursive;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: rgb(194,222,244);
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <h1>회 원 로 그 인</h1>
+    <form th:action="@{/members/login}" th:object="${memberDTO}" method="post">
+        <div class="field">
+            <input type="text" th:field="*{name}" placeholder="아이디" required>
+        </div>
+        <div class="field">
+            <input type="password" th:field="*{password}" placeholder="비밀번호" required>
+        </div>
+        <div class="field">
+            <button type="submit" class="login-btn">로그인</button>
+        </div>
+    </form>
+
+</body>
+</html>

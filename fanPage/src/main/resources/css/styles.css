@@ -11044,3 +11044,11 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+#navbarResponsive ul li{
+  list-style: none;
+}
+
+#navbarResponsive ul li a{
+  text-decoration: none;
+}
