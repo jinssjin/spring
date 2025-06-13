@@ -1,11 +1,25 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<title>Chap10</title>
 </head>
 <body>
-<h3 th:text="${data1}"></h3>
-<p th:text="${data2}"></p>
+<h3>스프링 시큐리티</h3>
+<!-- 권한체크 ROLE_MANAGER 권한을 가지고 있을 때만 표시 -->
+<div sec:authorize="hasRole('ROLE_MANAGER')">
+ <p><b>매니저 권한 화면입니다.</b> 
+</div>
+
+<!-- 권한 상관없이 로그인만 되어있으면 보이는 화면 -->
+ <div sec:authorize="isAuthenticated()">
+ 	<p>ROLE_MANAGER 권한 로그인 중입니다. 
+ 	<p><a href="/exam03">[웹 요청 URL /exam03로 이동하기]</a>
+ </div>
+
+<!-- 로그인되지 않은 사용자만 보이기 -->
+ <div sec:authorize="isAnonymous()">
+ 	<p>로그인 중이 아닙니다. 
+ 	<p><a href="/manager/tag">[웹 요청 URL /manager/tag로 이동하기]</a>
+</div>
 </body>
 </html>

@@ -1,6 +1,7 @@
 package com.springboot.repository;
 
 import com.springboot.domain.Book;
+import com.springboot.exception.BookIdException;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
@@ -23,6 +24,7 @@ public class BookRepositoryImpl implements BookRepository {
         book1.setCategory("IT전문서");
         book1.setUnitsInStock(1000);
         book1.setReleaseDate("2024/02/20");
+        book1.setFileName("ISBN1234.jpg");
 
         Book book2 = new Book();
         book2.setBookId("ISBN1235");
@@ -35,6 +37,7 @@ public class BookRepositoryImpl implements BookRepository {
         book2.setCategory("IT교육교재");
         book2.setUnitsInStock(1000);
         book2.setReleaseDate("2023/01/10");
+        book2.setFileName("ISBN1235.jpg");
 
         Book book3 = new Book();
         book3.setBookId("ISBN1236");
@@ -47,6 +50,7 @@ public class BookRepositoryImpl implements BookRepository {
         book3.setCategory("IT교육교재");
         book3.setUnitsInStock(1000);
         book3.setReleaseDate("2023/06/30");
+        book3.setFileName("ISBN1236.jpg");
 
         listOfBooks.add(book1);
         listOfBooks.add(book2);
@@ -69,7 +73,7 @@ public class BookRepositoryImpl implements BookRepository {
             }
         }
         if(bookInfo == null){
-            throw new IllegalArgumentException("도서ID가" + bookId + "인 해당도서를 찾을 수 없음");
+            throw new BookIdException(bookId);
         }
         return bookInfo;
     }
